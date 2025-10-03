@@ -1,0 +1,5 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Product</title><link rel="stylesheet" href="css/style.css"></head><body>
+<div class="header"><div class="left"><img class="logo" src="assets/images/logo.svg"><div class="store">VYANA</div></div><div class="nav"><a href="index.html">Home</a></div><div id="hdrUser" class="small">Sign In</div></div>
+<div class="container">
+  <div class="product-details"><div class="gallery"><img id="pimg" src="" style="width:100%;border-radius:8px"></div><div class="info"><h2 id="pname"></h2><p id="pprice"></p><p id="pdesc"></p><div style="margin-top:12px;"><button class="btn" onclick="addToCart(localStorage.getItem('view'))">Add to Cart</button><button class="btn primary" onclick="localStorage.setItem('buyNow', JSON.stringify([JSON.parse(localStorage.getItem('cart')||'[]')[0]||{}])); location.href='cart.html'">Buy Now</button></div></div></div>
+</div><script>document.addEventListener('DOMContentLoaded', function(){ loadProductPage(); });</script><script src="js/app.js"></script></body></html>
